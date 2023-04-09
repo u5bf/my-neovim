@@ -1,6 +1,8 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+vim.opt.showmatch = true -- 当光标置于成对符号（例如括号）时，高亮匹配的符号对
+
 -- tab
 vim.opt.autoindent = true
 vim.opt.smartindent = true
@@ -34,7 +36,7 @@ vim.opt.spell = true
 vim.opt.spelllang = {"en", "cjk"}
 vim.opt.spelloptions = "camel"
 
-vim.opt.timeoutlen = 900
+vim.opt.timeoutlen = 1000
 
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true

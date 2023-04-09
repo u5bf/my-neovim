@@ -13,9 +13,12 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
-    { import = "plugins" },
-  },
-	defaults = { lazy = true, version = false }, -- always use the latest git commit
+		{ import = "plugins" },
+	},
+	defaults = { 
+		lazy = true, 
+		version = false -- always use the latest git commit
+	}, 
 	install = { colorscheme = { "tokyonight", "gruvbox" } },
 	checker = { enabled = true }, -- automatically check for plugin updates
 	performance = {
@@ -23,6 +26,9 @@ require("lazy").setup({
 			-- disable some rtp plugins
 			disabled_plugins = {
 				"gzip",
+				-- "matchit",
+				-- "matchparen",
+                "netrwPlugin",
 				"tarPlugin",
 				"tohtml",
 				"tutor",

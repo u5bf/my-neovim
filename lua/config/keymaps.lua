@@ -12,15 +12,15 @@ vim.keymap.set("v", "<A-down>", ":m '>+1<CR>gv=gv",opts)
 vim.keymap.set("v", "<A-up>", ":m '<-2<CR>gv=gv",opts)
 
 -- split screen
-vim.keymap.set("n", "sk", ":set nosplitbelow<CR>:split<CR>:set splitbelow<CR>", opts)
-vim.keymap.set("n", "sj", ":set splitbelow<CR>:split<CR>", opts)
-vim.keymap.set("n", "sh", ":set nosplitright<CR>:vsplit<CR>:set splitright<CR>", opts)
-vim.keymap.set("n", "sl", ":set splitright<CR>:vsplit<CR>", opts)
+vim.keymap.set("n", ";k", ":set nosplitbelow<CR>:split<CR>:set splitbelow<CR>", opts)
+vim.keymap.set("n", ";j", ":set splitbelow<CR>:split<CR>", opts)
+vim.keymap.set("n", ";h", ":set nosplitright<CR>:vsplit<CR>:set splitright<CR>", opts)
+vim.keymap.set("n", ";l", ":set splitright<CR>:vsplit<CR>", opts)
 -- cursor jumper between screen
-vim.keymap.set("n", "<leader>l", "<c-w>l", opts)
-vim.keymap.set("n", "<leader>k", "<c-w>k", opts)
-vim.keymap.set("n", "<leader>h", "<c-w>h", opts)
-vim.keymap.set("n", "<leader>j", "<c-w>j", opts)
+vim.keymap.set("n", "gl", "<c-w>l", opts)
+vim.keymap.set("n", "gk", "<c-w>k", opts)
+vim.keymap.set("n", "gh", "<c-w>h", opts)
+vim.keymap.set("n", "gj", "<c-w>j", opts)
 vim.keymap.set("n", "sc", "<c-w>o", opts)
 
 -- rotate screen

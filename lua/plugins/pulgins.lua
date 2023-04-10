@@ -18,6 +18,6 @@ return {
 			filters = {
 			dotfiles = true,
 			},
-    },
+		},
 	},
 }

@@ -8,16 +8,21 @@ return {
     {
 		'nvim-tree/nvim-tree.lua',
 		dependencies = 'nvim-tree/nvim-web-devicons',
-		keys = { { "tt", "<cmd>NvimTreeToggle<cr>", desc = ":NvimTreeToggle" } },
+		keys = { { "<C-b>", "<cmd>NvimTreeToggle<cr>", desc = ":NvimTreeToggle" } },
 	    opts = {
 			-- add your options that should be passed to the setup() function here
 			sort_by = "case_sensitive",
 			renderer = {
-			group_empty = true,
+				group_empty = true,
 			},
 			filters = {
-			dotfiles = true,
+				dotfiles = true,
 			},
+			update_focused_file = {
+				enable = true,
+				update_cwd = true,
+				ignore_list = {}
+			}
 		},
 	},
 }
